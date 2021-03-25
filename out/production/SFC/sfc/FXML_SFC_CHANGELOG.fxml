@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="480.0" maxWidth="640.0" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: ffffff;" stylesheets="@../css/buttonCustom.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sfc.FXML_SFCController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutY="2.0" prefHeight="35.0" prefWidth="640.0" spacing="5.0">
+         <children>
+            <Button fx:id="gameButtonChangelog" mnemonicParsing="false" onAction="#gameButton" style="-fx-border-color: #000; -fx-border-width: 2;" text="Game">
+               <font>
+                  <Font name="Gadugi Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="creditsButtonChangelog" mnemonicParsing="false" onAction="#creditsButton" style="-fx-border-color: #000; -fx-border-width: 2;" text="Credits">
+               <font>
+                  <Font name="Gadugi Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button defaultButton="true" mnemonicParsing="false" style="-fx-border-color: #000; -fx-border-width: 2;" text="Changelog">
+               <font>
+                  <Font name="Gadugi Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <AnchorPane prefHeight="37.0" prefWidth="382.0">
+               <children>
+                  <Text layoutX="293.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SFC 2020">
+                     <font>
+                        <Font name="Gadugi Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="1.0" />
+         </padding>
+      </HBox>
+      <Line endX="539.0" layoutX="101.0" layoutY="41.0" startX="-100.0" strokeWidth="2.0" />
+      <ScrollPane hbarPolicy="NEVER" layoutX="12.0" layoutY="44.0" prefHeight="436.0" prefWidth="641.0" style="-fx-background-color: fff; -fx-border-color: #000; -fx-border-width: 2;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="44.0">
+         <content>
+            <AnchorPane prefHeight="427.0" prefWidth="627.0">
+               <children>
+                  <Text layoutX="7.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Version 0.1 PRE-ALPHA:">
+                     <font>
+                        <Font name="Gadugi Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="53.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It's day then our project has borned!">
+                     <font>
+                        <Font name="Gadugi" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

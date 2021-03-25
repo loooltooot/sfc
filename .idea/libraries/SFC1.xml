@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="SFC1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/run1117959417/SFC.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../JavaFX/javafx-sdk-11.0.2/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://C:/Program Files/Java/javafx-sdk-11.0.2/legal" />
+    </NATIVE>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../JavaFX/javafx-sdk-11.0.2/lib" />
+    </SOURCES>
+    <excluded>
+      <root url="file://C:/Program Files/Java/javafx-sdk-11.0.2/legal/javafx.base" />
+      <root url="file://C:/Program Files/Java/javafx-sdk-11.0.2/legal/javafx.fxml" />
+    </excluded>
+    <jarDirectory url="file://$PROJECT_DIR$/../../JavaFX/javafx-sdk-11.0.2/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../JavaFX/javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>

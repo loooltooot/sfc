@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="480.0" maxWidth="640.0" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: ffffff;" stylesheets="@../css/buttonCustom.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sfc.FXML_SFCController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutY="2.0" prefHeight="35.0" prefWidth="640.0" spacing="5.0">
+         <children>
+            <Button defaultButton="true" mnemonicParsing="false" style="-fx-border-color: #000; -fx-border-width: 2;" text="Game">
+               <font>
+                  <Font name="Gadugi Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="creditsButtonMain" mnemonicParsing="false" onAction="#creditsButton" style="-fx-border-color: #000; -fx-border-width: 2;" text="Credits">
+               <font>
+                  <Font name="Gadugi Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="changelogButtonMain" mnemonicParsing="false" onAction="#changelogButton" style="-fx-border-color: #000; -fx-border-width: 2;" text="Changelog">
+               <font>
+                  <Font name="Gadugi Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <AnchorPane prefHeight="37.0" prefWidth="382.0">
+               <children>
+                  <Text layoutX="293.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SFC 2020">
+                     <font>
+                        <Font name="Gadugi Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="1.0" />
+         </padding>
+      </HBox>
+      <Line endX="539.0" layoutX="101.0" layoutY="41.0" startX="-100.0" strokeWidth="2.0" />
+      <VBox alignment="TOP_CENTER" layoutX="29.0" layoutY="158.0" prefHeight="274.0" prefWidth="584.0" spacing="10.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Create your player:" textAlignment="CENTER" wrappingWidth="207.94921875">
+               <font>
+                  <Font name="Gadugi" size="22.0" />
+               </font>
+            </Text>
+            <AnchorPane prefHeight="23.0" prefWidth="584.0" />
+            <TextField fx:id="nameField" maxHeight="200.0" maxWidth="314.0" prefHeight="25.0" prefWidth="314.0" promptText="Enter name" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 2;">
+               <font>
+                  <Font name="Gadugi" size="14.0" />
+               </font>
+            </TextField>
+            <HBox alignment="CENTER" prefHeight="31.0" prefWidth="623.0" spacing="30.0">
+               <children>
+                  <RadioButton fx:id="radioForward" mnemonicParsing="false" text="Forward">
+                     <font>
+                        <Font name="Gadugi" size="14.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="role" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="radioMidfielder" mnemonicParsing="false" text="Midfielder" toggleGroup="$role">
+                     <font>
+                        <Font name="Gadugi" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="radioDefender" mnemonicParsing="false" text="Defender" toggleGroup="$role">
+                     <font>
+                        <Font name="Gadugi" size="14.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="64.0" prefWidth="584.0" />
+            <Button fx:id="start" mnemonicParsing="false" onMouseClicked="#startButtonAction" style="-fx-border-color: #000; -fx-border-width: 2;" text="Start">
+               <font>
+                  <Font name="Gadugi Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <Text layoutX="100.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Simulator Football Career 2020!" wrappingWidth="468.94921875">
+         <font>
+            <Font name="Gadugi" size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="warningLabel" alignment="CENTER" layoutX="126.0" layoutY="424.0" prefHeight="17.0" prefWidth="389.0" textFill="RED">
+         <font>
+            <Font name="Gadugi" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

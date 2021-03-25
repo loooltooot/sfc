@@ -1,0 +1,16 @@
+.button {
+	-fx-background-color:transparent;
+}
+
+.button:hover {
+	-fx-background-color:black;
+	-fx-text-fill:white;
+}
+.button:pressed,.button:default:hover:pressed {
+	-fx-background-color:black;
+	-fx-text-fill:white;
+}
+.button:default {
+	-fx-background-color: black;
+	-fx-text-fill: white;
+} 
